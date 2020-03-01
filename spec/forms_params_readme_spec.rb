@@ -23,11 +23,11 @@ describe "App" do
       expect(last_response.status).to eq(200)
     end
 
-    #it 'displays the params' do
-     # params = {
-      #  :name => "Carl",
-       # :favorite_food => "fried chicken"
-      #}
+    it 'displays the params' do
+      params = {
+        :name => "Carl",
+        :favorite_food => "fried chicken"
+      }
 
       post '/food', params
 
